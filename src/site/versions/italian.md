@@ -1,11 +1,11 @@
 ---
-title: 'Pluralità: Il futuro della tecnologia collaborativa e della democrazia'
+title: 'Pluralità: Il futuro della democrazia e della tecnologia collaborativa'
 githubLink:
 dateStartedString: { day: '01', month: '08', year: '2022' }
 translations:
   {
     plurality: 'Pluralità',
-    subtitle: 'Il futuro della tecnologia collaborativa e della democrazia',
+    subtitle: 'Il futuro della democrazia e della tecnologia collaborativa',
     authorsLead: 'E. Glen Weyl, Audrey Tang e Comunità ⿻',
     translatorsLead: 'Traduzione in italiano:',
     return: 'return',
