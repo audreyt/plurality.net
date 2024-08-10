@@ -5,7 +5,7 @@ permalink: "/chapters/"
 
 {%- from './_includes/macros/chapterversion-menu-item.njk' import chapterVersionMenuItem -%}
 
-    <div id="component1"
+    <div tabindex="0" id="component1"
     style="margin-top:160px;
     margin-bottom: 32px;
     /* Auto layout */
@@ -241,7 +241,7 @@ permalink: "/chapters/"
              /*radial-gradient(100.00% 100.00% at 91.74% 68.92%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0) 100%);*/
               border-radius: 32px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 46px; display: flex">
                 <div style="align-self: stretch; height: 68px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-                    <div style="align-self: stretch; height: 68px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
+                    <div tabindex="0" style="align-self: stretch; height: 68px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
                         <div style="align-self: stretch; color: white; font-size: 32px; font-family: LanaPixel; font-weight: 400; text-transform: uppercase; word-wrap: break-word">download</div>
                         <div style="color: white; font-size: 16px; font-family: Jost; font-weight: 400; word-wrap: break-word">Choose your language, and get your plural copies</div>
                     </div>
@@ -326,7 +326,7 @@ permalink: "/chapters/"
 
         <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
             <div id="component2-1-2" style="padding: 32px; background: rgba(255, 255, 255, 0.20); border-radius: 32px; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 24px; display: flex">
-<section class="info-box">
+<section tabindex="0" class="info-box">
 <select id="book-language-select" style="width:192px;font-family: Jost; margin-bottom: 4px; margin-top: 4px;">
   <option value="">&#x1F310 Choose a language</option>
   <option value="en">&#x1F310 English</option>
@@ -371,7 +371,7 @@ permalink: "/chapters/"
     </div>
 
 
-    <div id="component2-2" style="align-self: stretch; padding: 32px; background: rgba(255, 255, 255, 0.20); border-radius: 32px; flex-direction: column; align-items: flex-start; display: inline-flex">
+    <div tabindex="0" id="component2-2" style="align-self: stretch; padding: 32px; background: rgba(255, 255, 255, 0.20); border-radius: 32px; flex-direction: column; align-items: flex-start; display: inline-flex">
         <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
             <div style="align-self: stretch; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 16px; display: flex">
                 <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: flex">
@@ -576,19 +576,19 @@ margin-right:calc(var(--padding-step-4)*2);
 </style>
 
 
-<table id="chapter_container_table">
+<table tabindex="0" id="chapter_container_table">
     <center>
 <tr>
 <td valign="top">
 <div id="version-menu">
   <ol id="version-ol">
-<div>
+<div tabindex="0">
     {% for version in collections.chapterversions |sortDataByChapteridSubidLanguageIso %}
 {% if ((version.data.language.en) == 'english')%}
 </div>
 {% if ((version.data.chapterid.chapterid_subid) == '0-1') %}
-          <li style="font-size:40px;padding:0 28px;">Part {{ version.data.chapterid.chapterid }} {{ version.data.chapterid.section_title }}</li>
-    <div>
+          <li tabindex="0" style="font-size:40px;padding:0 28px;">Part {{ version.data.chapterid.chapterid }} {{ version.data.chapterid.section_title }}</li>
+    <div tabindex="0">
         {% endif %}
 
 {% if ((version.data.chapterid.chapterid_subid) == '3-0')
@@ -600,8 +600,8 @@ margin-right:calc(var(--padding-step-4)*2);
     or ((version.data.chapterid.chapterid_subid) == '7-0' )
     %}
 </div>
-          <li style="font-size:40px;padding:56px 28px 0px 28px;">Part {{ version.data.chapterid.chapterid }} {{ version.data.chapterid.section_title }}</li>
-    <div>
+          <li tabindex="0" style="font-size:40px;padding:56px 28px 0px 28px;">Part {{ version.data.chapterid.chapterid }} {{ version.data.chapterid.section_title }}</li>
+    <div tabindex="0">
         {% endif %}
         {% endif %}
 
