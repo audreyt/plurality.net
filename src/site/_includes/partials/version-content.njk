@@ -9,7 +9,7 @@
     <div id="version-index-content-mobile">{{ content | replace("h1", "h2") | toc | safe }}</div>
   </div>
   <div id="version-content">
-    <div id="version-data">
+    <div tabindex="0" id="version-data">
       <p id="version-data-title">{{title}}</p>
       <span>
         <p id="version-data-authors">{{translations.authorsLead}}</p>
@@ -36,7 +36,7 @@
         {% endif %}
       </span>
     </div>
-    <div id="version-md">
+    <div tabindex="0" id="version-md">
       {{ content | safe }}
     </div>
   </div>
