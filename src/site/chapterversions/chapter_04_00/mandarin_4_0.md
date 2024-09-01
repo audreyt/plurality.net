@@ -15,4 +15,4 @@ language: { en: 'Mandarin/華文', iso6392B: 'zh-TW', locale: 'IV 0 Rights, Oper
 chapterid: { chapterid: 4, chapterid_subid: '4-0'}
 translators: []
 ---
-{% readdynamiccode 'https://raw.githubusercontent.com/pluralitybook/plurality/main/contents//traditional-mandarin/4-0-權利、作業系統與數位自由.md' %}
+{% readdynamiccode 'https://raw.githubusercontent.com/pluralitybook/plurality/main/contents/traditional-mandarin/4-0-權利、作業系統與數位自由.md' %}
