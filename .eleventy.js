@@ -163,7 +163,7 @@ module.exports = function(eleventyConfig) {
     let grouped = lodash.groupBy(obj, (obj) => obj.MainContirbutionCategory);
 
     // Define a custom order for groups
-    let order = ["Writing", "Editing", "Translation", "Visuals","Data","Management","Public Relations","Research"];
+    let order = ["Writing","Editing","Technical","Translation","Visual","Data","Management","Public Relations","Research"];
     console.log(order);
     // Sort groups by custom order
     let sortedGroups = Object.fromEntries(
