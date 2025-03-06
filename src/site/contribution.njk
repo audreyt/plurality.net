@@ -1,0 +1,19 @@
+---
+layout: version
+permalink: "/contribution/"
+---
+
+
+{% for category, items in contributor_from_file | groupedAndOrderedContribution %}
+<blockquote>
+    <h2 id="version-title-{{ category }}" style="font-size:64px;text-transform: uppercase;">{{ category }}</h2>
+    {% for item in items %}
+    <div style="font-size:{{ item['Font Size'] | safe }}px;">
+        {{ item['RowLabels'] | safe }}
+    </div>
+
+    {% endfor %}<br>
+</blockquote>
+<hr>
+{% endfor %}
+{% include "partials/footer.njk" %}

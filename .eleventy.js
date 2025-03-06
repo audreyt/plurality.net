@@ -2,6 +2,7 @@ const pluginTOC = require('eleventy-plugin-toc')
 const htmlmin = require("html-minifier");
 const EleventyFetch = require('@11ty/eleventy-fetch');
 const { EleventyRenderPlugin } = require('@11ty/eleventy');
+const lodash = require("lodash");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary(
@@ -27,7 +28,7 @@ module.exports = function(eleventyConfig) {
     const shortcodeFetch = (url,fallback_url) => {
       try {
         let returnedContent = EleventyFetch(url, {
-          duration: '1m',
+          duration: '1d',
           type: 'text',
           verbose: true
         }).then(
@@ -61,7 +62,7 @@ module.exports = function(eleventyConfig) {
     const shortcodeFetch = (url,fallback_url) => {
       try {
         let returnedContent = EleventyFetch(url, {
-          duration: '1m',
+          duration: '1d',
           type: 'text',
           verbose: true
         }).then(
@@ -155,6 +156,23 @@ module.exports = function(eleventyConfig) {
 
     return sorted;
 
+  });
+
+  eleventyConfig.addFilter("groupedAndOrderedContribution", (obj) => {
+    // Group by category
+    let grouped = lodash.groupBy(obj, (obj) => obj.MainContirbutionCategory);
+
+    // Define a custom order for groups
+    let order = ["Writing", "Editing", "Translation", "Visuals","Data","Management","Public Relations","Research"];
+    console.log(order);
+    // Sort groups by custom order
+    let sortedGroups = Object.fromEntries(
+      order
+        .filter((key) => grouped[key]) // Keep only existing groups
+        .map((key) => [key, grouped[key]]) // Create ordered object
+    );
+    console.log(sortedGroups);
+    return sortedGroups;
   });
 
   eleventyConfig.addPassthroughCopy({

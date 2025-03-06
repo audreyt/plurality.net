@@ -29,6 +29,8 @@
     "markdown-it-toc-done-right": "^4.2.0",
     "queue-microtask": "^1.2.3",
     "uslug": "^1.0.4",
+    "csv-parse": "^5.5.5",
+    "lodash": "^4.17.21",
     "node-fetch": "^2.3.0"
   }
 }
