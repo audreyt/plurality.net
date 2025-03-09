@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
     const shortcodeFetch = (url,fallback_url) => {
       try {
         let returnedContent = EleventyFetch(url, {
-          duration: '1d',
+          duration: '1m',
           type: 'text',
           verbose: true
         }).then(
@@ -62,7 +62,7 @@ module.exports = function(eleventyConfig) {
     const shortcodeFetch = (url,fallback_url) => {
       try {
         let returnedContent = EleventyFetch(url, {
-          duration: '1d',
+          duration: '1m',
           type: 'text',
           verbose: true
         }).then(
