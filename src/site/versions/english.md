@@ -72,7 +72,7 @@ There is a striking split between democracy and technology, and this chapter map
 
 Taiwan, situated at the junction of the Eurasian and American tectonic plates, is at the crossroads of authoritarian AI ideology, American capitalism, and European value-based management ideology. The fault lines between the tectonic plates have caused Taiwan's highest peak, Yushan, to push upward; these clashes of ideas between different cultures have allowed Taiwan to develop a rich diversity of collaborative and dynamic perspectives, and to become the most technologically advanced and democratically active country in the world. In this chapter, the history and development of digital democracy in Taiwan and the daily life of its civil society are vividly and emotionally depicted from various perspectives, and compared with other liberal democracies in the world today.
 
-### 2-1 The Life of A Digital Democracy
+### 2-2 The Life of A Digital Democracy
 
 This chapter vividly and emotionally depicts Taiwan's unique and profound approach to digital democracy and the daily life of its civil society from various perspectives, contrasting with the current state of other free democratic nations around the world. It moves through analogies and narratives of technological philosophy, presenting a comprehensive examination of Taiwan's pioneering role in open government and innovative digital democratic practices.
 
