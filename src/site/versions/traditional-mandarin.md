@@ -19,7 +19,7 @@ translators:
     Vivian Chen,
     Isabel Hou,
     Elena Chen,
-    Gisele Chou,
+    Tenzin Yangtso,
     KC Chen,
     Stamford Hwang,
   ]
